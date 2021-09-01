@@ -8,5 +8,5 @@ website_html = response.text
 
 soup = BeautifulSoup(website_html, "html.parser")
 
-all_movies = soup.find_all(name="h2", class_="title")
+all_movies = soup.find_all(name="h3", class_="jsx-4245974604")
 print(all_movies)
