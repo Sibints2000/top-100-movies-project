@@ -11,4 +11,5 @@ soup = BeautifulSoup(website_html, "html.parser")
 all_movies = soup.find_all(name="h3", class_="jsx-4245974604")
 
 movie_titles = [movie.getText() for movie in all_movies]
-print(movie_titles[::-1])
+for n in range(len(movie_titles) - 1, 0, -1):
+    print(n)
