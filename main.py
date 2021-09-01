@@ -8,4 +8,4 @@ website_html = response.text
 
 soup = BeautifulSoup(website_html, "html.parser")
 
-print(soup.prettify())
+soup.find_all(name="h2", class_="title")
