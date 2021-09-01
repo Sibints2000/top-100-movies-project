@@ -8,7 +8,7 @@ website_html = response.text
 
 soup = BeautifulSoup(website_html, "html.parser")
 
-all_movies = soup.find_all(name="h3", class_="jsx-4245974604 listicle-item-image")
+all_movies = soup.find_all(name="h3", class_="jsx-4245974604")
 
 movie_titles = [movie.getText() for movie in all_movies]
-print(movie_titles)
+print(movie_titles[::-1])
